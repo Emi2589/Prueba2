@@ -1,0 +1,71 @@
+/* el asterisco es un selector universal para reiniciar estilos*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-conteiner {
+    background-color: #5995da;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    /* podemos alinear horizontalmente de una manera rapida con flexbox */
+    justify-content: center;
+}
+
+.menu {
+    border: 1px solid #fff;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-container {
+    background-color: #d6e9fe;
+    color: #5995da;
+    display: flex;
+    justify-content: center;
+}
+
+.product {
+    width: 70%;
+    /* viewport (unidad de medida vh) para alturas. para que las imagenes se acomoden al dispositivo  */
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    /* Alinear verticalmente */
+   /* padding-top: 40px; puedo hacerlo con padding o con flexbox*/
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.photo-grid-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.photo-grid {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    /* cuando desbordan los elementos se activa por ej: 5 fotos en una misma seccion */
+    flex-wrap: wrap;
+    /* con flexbox podemos manejar la direccion de los elementos*/
+    /*flex-direction: column; los elementos se vuelven columna */
+    /*flex-direction: row; los elementos se vuelven una fila */
+    /*flex-direction: row-reverse; los elementos se vuelven una fila pero al revez */
+    /* flex-direction: column-reverse; los elementos se vuelven una columna pero al revez */
+
+}
+
+.first-item {
+/* orden - sin afectar a los elementos circundantes. en el ejemplo de abajo. si le pongo valor 1 positivo, la imagen se va a ir lo mas q pueda a la derecha (a la derehca un numero positivo) */
+order:  1;
+
+}
+
+/* orden - sin afectar a los elementos circundantes. en el ejemplo de abajo. si le pongo valor 1 negativo, la imagen se va a ir lo mas q pueda a la izquierda (a la izquierda un numero negativo)*/
+.last-item {
+order: -1;
+}
